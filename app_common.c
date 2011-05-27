@@ -33,4 +33,13 @@ void app_common_press_enter(){
 	if (b2[strlen(b2)-1] == '\n') b2[strlen(b2)-1] = '\0';
 }
 
+void app_common_title(char *title){
+	puts(title);
+	int l = strlen(title);
+	int i = 0;
+	for(i = 0; i < l; i++){
+		printf("=");
+	}
+	printf("=\n");
+}
 
